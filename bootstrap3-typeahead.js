@@ -545,7 +545,7 @@
                 return;
             }
             this.keyPressed = true;
-            this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40, 38, 9, nn, 27]);
+            this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40, 38, 9, 27]);
             if (!this.shown && e.keyCode == 40) {
                 this.lookup();
             } else {
