@@ -509,7 +509,7 @@
 
             switch (e.keyCode) {
                 case 9: // tab
-                case 13: // enter
+                //case 13: // enter
                 case 27: // escape
                     e.preventDefault();
                     break;
@@ -545,7 +545,7 @@
                 return;
             }
             this.keyPressed = true;
-            this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40, 38, 9, 13, 27]);
+            this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40, 38, 9, nn, 27]);
             if (!this.shown && e.keyCode == 40) {
                 this.lookup();
             } else {
